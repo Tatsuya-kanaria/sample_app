@@ -65,7 +65,7 @@ Rails.application.configure do
   # Railsのproduction環境でMailgunを使う設定
   config.action_mailer.raise_delvery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'https://dashboard.heroku.com/apps/kana-rails-tutorial-sample'
+  host = 'https://kana-rails-tutorial-sample.herokuapp.com'
   config.action_mailer.default_url_options = { host: host}
   ActionMailer::Base.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
